@@ -156,7 +156,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             
 # --- Основной запуск ---
 if __name__ == '__main__':
-    application = ApplicationBuilder().token("8197764805:AAHmgGrdMohgya1SLRQHFxshz30Cn6Bm9a8").build()  # Вставь свой токен
+    application = ApplicationBuilder().token("ИМЯ_ТОКЕНА").build()  # Вставь свой токен
 
     application.add_handler(CommandHandler('start', start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
